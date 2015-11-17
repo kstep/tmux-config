@@ -5,9 +5,7 @@ set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 set -g base-index 1
 set -g terminal-overrides "*256col*:colors=256,*88col*:colors=88"
 #set -ga terminal-overrides ",rxvt*:rmir=\e]12;greenx07:smir=\e]12;orangex07"
-set -g mouse-select-pane off
-set -g mouse-resize-pane off
-set -g mouse-select-window off
+set -g mouse off
 
 set -g history-limit 1000
 set -g buffer-limit 1000
@@ -19,7 +17,6 @@ set -g renumber-windows on
 
 # Window options {{{
 setw -g mode-keys vi
-setw -g mode-mouse off
 setw -g xterm-keys on
 setw -g utf8 on
 setw -g aggressive-resize on
